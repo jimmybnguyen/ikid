@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WDk-RZ-k9V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pun-->
+        <scene sceneID="ejK-nY-4oG">
+            <objects>
+                <viewController storyboardIdentifier="pun" id="KCf-5e-rmq" customClass="PunViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Im5-ML-LrL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idB-bY-UnM">
+                                <rect key="frame" x="138" y="551" width="99" height="32"/>
+                                <color key="backgroundColor" red="0.19699024130000001" green="0.11710024519999999" blue="0.56499841370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="1lt-Yd-BNX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtn:" destination="KCf-5e-rmq" eventType="touchUpInside" id="xEO-0S-TWg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my step ladder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fk0-cH-VUq">
+                                <rect key="frame" x="75" y="148" width="225" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step-ladder.png" translatesAutoresizingMaskIntoConstraints="NO" id="YXv-Tr-caf">
+                                <rect key="frame" x="84" y="241" width="207" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="Xpf-FM-z5K"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T4x-ia-ndF" firstAttribute="bottom" secondItem="idB-bY-UnM" secondAttribute="bottom" constant="35" id="AIf-ob-bfP"/>
+                            <constraint firstItem="YXv-Tr-caf" firstAttribute="centerX" secondItem="Im5-ML-LrL" secondAttribute="centerX" id="J0D-fa-Nma"/>
+                            <constraint firstItem="YXv-Tr-caf" firstAttribute="leading" secondItem="T4x-ia-ndF" secondAttribute="leading" constant="84" id="LUB-sZ-PiN"/>
+                            <constraint firstItem="idB-bY-UnM" firstAttribute="centerX" secondItem="YXv-Tr-caf" secondAttribute="centerX" id="PHN-eM-zQP"/>
+                            <constraint firstItem="idB-bY-UnM" firstAttribute="leading" secondItem="T4x-ia-ndF" secondAttribute="leading" constant="138" id="T16-g3-AWF"/>
+                            <constraint firstItem="YXv-Tr-caf" firstAttribute="top" secondItem="fk0-cH-VUq" secondAttribute="bottom" constant="64" id="Zr5-Hz-MCc"/>
+                            <constraint firstItem="YXv-Tr-caf" firstAttribute="centerY" secondItem="Im5-ML-LrL" secondAttribute="centerY" id="csx-Fo-6J3"/>
+                            <constraint firstItem="YXv-Tr-caf" firstAttribute="centerX" secondItem="fk0-cH-VUq" secondAttribute="centerX" id="iyC-Hd-nO3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T4x-ia-ndF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="icons8-star-filled-1" id="CMn-ii-B83"/>
+                    <connections>
+                        <outlet property="punJokeImage" destination="YXv-Tr-caf" id="GLA-xF-Hoi"/>
+                        <outlet property="punJokeLabel" destination="fk0-cH-VUq" id="3TR-Wr-GmN"/>
+                        <outlet property="punViewController" destination="Im5-ML-LrL" id="p5r-Hu-XCw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eg-Oc-VA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461.60000000000002" y="-45.42728635682159"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="OEr-El-SCp">
+            <objects>
+                <viewController storyboardIdentifier="dad" id="fZH-oc-EaM" customClass="DadViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OTv-tP-vIs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xm-Ys-oM0">
+                                <rect key="frame" x="138" y="547" width="98" height="36"/>
+                                <color key="backgroundColor" red="0.19699024130000001" green="0.11710024519999999" blue="0.56499841370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtn:" destination="fZH-oc-EaM" eventType="touchUpInside" id="2Lc-4D-BWB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have a fear of speed bumps..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9UM-kZ-HYI">
+                                <rect key="frame" x="42.5" y="320" width="290" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Xm-Ys-oM0" firstAttribute="leading" secondItem="te9-Pd-Qbh" secondAttribute="leading" constant="138" id="7Ap-ju-mf4"/>
+                            <constraint firstItem="te9-Pd-Qbh" firstAttribute="trailing" secondItem="7Xm-Ys-oM0" secondAttribute="trailing" constant="139" id="MZI-NX-XhJ"/>
+                            <constraint firstItem="9UM-kZ-HYI" firstAttribute="centerX" secondItem="OTv-tP-vIs" secondAttribute="centerX" id="QmJ-DO-f9U"/>
+                            <constraint firstItem="te9-Pd-Qbh" firstAttribute="bottom" secondItem="7Xm-Ys-oM0" secondAttribute="bottom" constant="35" id="ZSV-rh-Zc4"/>
+                            <constraint firstItem="9UM-kZ-HYI" firstAttribute="centerY" secondItem="OTv-tP-vIs" secondAttribute="centerY" id="w5n-6y-jkp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="te9-Pd-Qbh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="icons8-father-filled-1" id="zMR-cO-yeJ"/>
+                    <connections>
+                        <outlet property="dadJokeLabel" destination="9UM-kZ-HYI" id="OyU-0v-jod"/>
+                        <outlet property="dadView" destination="OTv-tP-vIs" id="ubM-nY-daY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U35-nA-w1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="621.13943028485767"/>
+        </scene>
+        <!--Good-->
+        <scene sceneID="a9p-rJ-huQ">
+            <objects>
+                <viewController storyboardIdentifier="good" id="VtE-Lg-xP0" customClass="GoodViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mCU-n0-h1V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="s81-eQ-xyM">
+                                <rect key="frame" x="138" y="551" width="99" height="32"/>
+                                <color key="backgroundColor" red="0.19699024130000001" green="0.11710024519999999" blue="0.56499841370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtn:" destination="VtE-Lg-xP0" eventType="touchUpInside" id="EzE-GS-lDj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the object-oriented way of getting rich?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="24K-Ns-fA7">
+                                <rect key="frame" x="7.5" y="323" width="360" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="24K-Ns-fA7" firstAttribute="centerY" secondItem="mCU-n0-h1V" secondAttribute="centerY" id="351-UE-beF"/>
+                            <constraint firstItem="PGA-5s-eQS" firstAttribute="trailing" secondItem="s81-eQ-xyM" secondAttribute="trailing" constant="138" id="7Po-a6-FxH"/>
+                            <constraint firstItem="24K-Ns-fA7" firstAttribute="leading" secondItem="PGA-5s-eQS" secondAttribute="leading" constant="7.5" id="LQ1-Lt-tPT"/>
+                            <constraint firstItem="s81-eQ-xyM" firstAttribute="leading" secondItem="PGA-5s-eQS" secondAttribute="leading" constant="138" id="WFD-Ae-9xG"/>
+                            <constraint firstItem="PGA-5s-eQS" firstAttribute="bottom" secondItem="s81-eQ-xyM" secondAttribute="bottom" constant="35" id="dym-g9-E2u"/>
+                            <constraint firstItem="PGA-5s-eQS" firstAttribute="trailing" secondItem="24K-Ns-fA7" secondAttribute="trailing" constant="7.5" id="lAj-ec-Qml"/>
+                            <constraint firstItem="24K-Ns-fA7" firstAttribute="centerX" secondItem="mCU-n0-h1V" secondAttribute="centerX" id="mmR-nn-Hlc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PGA-5s-eQS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" image="icons8-heart-filled-1" id="YPt-gt-WNu"/>
+                    <connections>
+                        <outlet property="goodJokeLabel" destination="24K-Ns-fA7" id="dSB-QY-z7r"/>
+                        <outlet property="goodJokeView" destination="mCU-n0-h1V" id="XZx-tK-Shp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvF-ng-SIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="-708.39580209895053"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7XB-jc-lRp">
+            <objects>
+                <tabBarController id="WDk-RZ-k9V" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vh4-tK-wUS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VtE-Lg-xP0" kind="relationship" relationship="viewControllers" id="qIA-fq-RfC"/>
+                        <segue destination="KCf-5e-rmq" kind="relationship" relationship="viewControllers" id="c7C-GO-amS"/>
+                        <segue destination="fZH-oc-EaM" kind="relationship" relationship="viewControllers" id="bus-Uh-wCq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw3-Lk-JaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-father-filled-1" width="25" height="25"/>
+        <image name="icons8-heart-filled-1" width="25" height="25"/>
+        <image name="icons8-star-filled-1" width="25" height="25"/>
+        <image name="step-ladder.png" width="800" height="800"/>
+    </resources>
+</document>
